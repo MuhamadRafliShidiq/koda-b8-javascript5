@@ -18,9 +18,9 @@ const evenOdd = (array, even) => {
 const even = true;
 const odd = false;
 
-console.log(evenOdd(numbers,even)); // Output : True (karena sesuai yang diminta yaitu even/genap)
-console.log(evenOdd(numbers,odd)); // Output : True (karena sesuai yang diminta yaitu odd/ganjil)
-console.log(evenOdd(numbers, odd)); // output : false (karena yang diminta odd/ganjil)
-console.log(evenOdd(oddNumbers, even));// Outpu : false (karena yang diminta even/genap)
+console.log(evenOdd(numbers,even)); // Output : True (karena sesuai yang diminta yaitu even/genap dan variabel numbers nya isi array nya semua genap)
+console.log(evenOdd(numbers,odd)); // Output : True (karena sesuai yang diminta yaitu odd/ganjil dan variabel numbers nya isi array nya semua genap)
+console.log(evenOdd(numbers, odd)); // output : false (karena yang diminta odd/ganjil sedangkan variabel numbers, isi array nya semua genap)
+console.log(evenOdd(oddNumbers, even));// Output : false (karena yang diminta even/genap sedangkan variabel numbers, isi array nya semua ganjil)
 
 
