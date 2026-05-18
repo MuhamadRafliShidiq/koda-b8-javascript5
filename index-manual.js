@@ -4,9 +4,9 @@ const numbers = [2, 4, 6, 8];
 const oddNumbers = [1, 3, 5, 7, 9];
 const even = true;
 const odd = false;
-const evenOdd = (array, even) => {
+const evenOdd = (array, typeNumber) => {
     for (let i = 0; i < array.length; i++) {
-        if (even === true) {
+        if (typeNumber === true) {
             if (array[i] % 2 !== 0) {
                 return false;
             }
