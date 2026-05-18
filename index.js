@@ -3,10 +3,13 @@
 
 const numbers = [2, 4, 6, 8];
 const oddNumbers = [1, 3, 5, 7, 9];
-const evenOdd = (array, even) => {
+const even = true;
+const odd = false;
+
+const evenOdd = (array, typeNumber) => {
     return array.every((item) => {
 
-        if (even) {
+        if (typeNumber) {
             return item % 2 === 0;
         } else {
             return item % 2 !== 0;
@@ -15,8 +18,6 @@ const evenOdd = (array, even) => {
     });
 };
 
-const even = true;
-const odd = false;
 
 console.log(evenOdd(numbers,even)); // Output : True (karena sesuai yang diminta yaitu even/genap dan variabel numbers nya isi array nya semua genap)
 console.log(evenOdd(oddNumbers,odd)); // Output : True (karena sesuai yang diminta yaitu odd/ganjil dan variabel oddNumbers nya isi array nya semua genap)
